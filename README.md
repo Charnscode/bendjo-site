@@ -59,6 +59,9 @@ src/
 
 ## Sécurité
 
+- **HTTPS** : automatique et gratuit sur Vercel et Netlify (certificat
+  Let's Encrypt généré et renouvelé tout seul), y compris avec un nom de
+  domaine personnalisé. Rien à configurer dans le code.
 - **Aucune donnée n'est envoyée à un serveur.** Le formulaire de contact et
   le panier n'utilisent aucune API ni base de données : tout reste dans le
   navigateur, et la "commande" ouvre simplement WhatsApp avec un message
@@ -67,9 +70,16 @@ src/
 - Pas de dépendance obscure : uniquement des paquets npm largement utilisés
   (React, React Router, Framer Motion, Lucide, Tailwind).
 - Aucun `dangerouslySetInnerHTML`, `eval`, ni exécution de contenu externe.
-- En-têtes de sécurité basiques (`X-Frame-Options`, `X-Content-Type-Options`,
-  `Referrer-Policy`) déjà configurés pour Vercel dans `vercel.json` — pensez
-  à l'équivalent côté Netlify (`public/_headers`) si vous déployez là-bas.
+- **En-têtes de sécurité complets**, configurés à l'identique pour Vercel
+  (`vercel.json`) et Netlify (`public/_headers`) :
+  - `Strict-Transport-Security` (HSTS) : force le HTTPS même si quelqu'un
+    tape ou partage un lien en `http://`.
+  - `Content-Security-Policy` : n'autorise que les ressources nécessaires
+    (le site lui-même, Google Fonts, Fontshare) ; bloque toute exécution de
+    script externe non prévue.
+  - `X-Frame-Options`, `X-Content-Type-Options`, `Referrer-Policy`,
+    `Permissions-Policy` (caméra/micro/géolocalisation désactivés, inutiles
+    ici).
 - Si vous ajoutez un vrai formulaire avec backend plus tard : validez et
   filtrez toujours les entrées côté serveur, jamais seulement côté client.
 - `npm audit` signale une vulnérabilité modérée dans `esbuild` (via Vite) qui
