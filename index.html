@@ -4,30 +4,42 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/webp" href="/src/assets/logo.webp" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BenDjo — Infusions naturelles, petit-déjeuner &amp; traiteur</title>
+    <title>BenDjo | Infusions naturelles, petit-déjeuner &amp; traiteur</title>
     <meta
       name="description"
-      content="BenDjo — infusions 100% naturelles, petit-déjeuner d'entreprise et service traiteur au Bénin."
+      content="BenDjo, infusions 100% naturelles, petit-déjeuner d'entreprise et service traiteur au Bénin."
     />
 
     <!-- Fraunces (serif display) + Work Sans (corps) via Google Fonts -->
+    <!-- Telma (script élégant) via Fontshare, pour les mots d'accent -->
+    <!-- Chargement asynchrone : les polices ne bloquent plus l'affichage de la page -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://api.fontshare.com" />
     <link
+      rel="preload"
+      as="style"
       href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap"
-      rel="stylesheet"
+      data-swap-to-stylesheet
     />
-
-    <!-- Telma (script élégant) via Fontshare — utilisé pour les mots d'accent -->
     <link
+      rel="preload"
+      as="style"
       href="https://api.fontshare.com/v2/css?f[]=telma@400,500&display=swap"
-      rel="stylesheet"
+      data-swap-to-stylesheet
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap"
+      />
+      <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=telma@400,500&display=swap" />
+    </noscript>
 
     <!-- Open Graph / réseaux sociaux -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="%VITE_SITE_URL%/" />
-    <meta property="og:title" content="BenDjo — Infusions naturelles, petit-déjeuner & traiteur" />
+    <meta property="og:title" content="BenDjo | Infusions naturelles, petit-déjeuner & traiteur" />
     <meta
       property="og:description"
       content="Infusions 100% naturelles, petit-déjeuner d'entreprise et service traiteur au Bénin."
