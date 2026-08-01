@@ -11,7 +11,7 @@ import mugImg from "../assets/mug.webp";
 import boutiqueImg from "../assets/boutique.webp";
 import kioskImg from "../assets/kiosk.webp";
 import videoPoster from "../assets/video-poster.webp";
-import videoSrc from "../assets/video/bendjo.mp4";
+import videoSrc from "../assets/video/bendjo.webm";
 
 const VALUES = [
   { icon: Leaf, title: "100% naturel", body: "Aucun additif, aucun arôme artificiel, uniquement des plantes sélectionnées avec soin." },

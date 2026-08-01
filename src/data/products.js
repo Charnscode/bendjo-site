@@ -1,6 +1,6 @@
 import basilicImg from "../assets/product-basilic.webp";
 import hibiscusImg from "../assets/product-hibiscus.webp";
-import citronnelleImg from "../assets/product-citronnelle.webp";
+import citronnelleImg from "../assets/product-citronnelle.jpg";
 
 export const PRODUCTS = [
   {
@@ -56,4 +56,4 @@ export const PRODUCTS = [
   },
 ];
 
-export const WHATSAPP_NUMBER = "229162014161"; // vrai numéro BenDjo (Facebook)
+export const WHATSAPP_NUMBER = "22962014161"; 
