@@ -1,4 +1,4 @@
-# BenDjo — Site vitrine & commande WhatsApp
+# BenDjo — Site vitrine & commande
 
 Site React (Vite + Tailwind + React Router + Framer Motion) pour BenDjo :
 infusions naturelles, petit-déjeuner en entreprise et traiteur.
@@ -23,11 +23,7 @@ Le résultat est généré dans `dist/`.
 
 ## Déploiement
 
-Le projet est prêt pour **Netlify** ou **Vercel** :
-
-- Netlify : glissez-déposez le dossier `dist/` après `npm run build`, ou
-  connectez le dépôt Git (build command `npm run build`, publish directory
-  `dist`). Le fichier `public/_redirects` gère déjà le routing des pages.
+Le projet est prêt pour **Vercel** :
 - Vercel : connectez le dépôt (`vercel.json` inclus gère le routing et
   quelques en-têtes de sécurité de base).
 
@@ -50,25 +46,11 @@ src/
    (1500 FCFA, confirmé via la page Facebook officielle). Si le coffret
    "Thé naturel" 3-en-1 est un produit distinct des infusions "Citronnelle"
    à l'unité, dites-le-moi pour que je l'ajoute séparément.
-2. **Logo** — `src/assets/logo.jpg` est le monogramme utilisé comme photo
-   de profil officielle sur Facebook. Une version PNG transparente en plus
+2. **Logo** — `src/assets/logo.jpg` est le monogramme utilisé. Une version PNG transparente en plus
    haute résolution donnerait un rendu encore plus net si vous l'avez.
-3. **Domaine réel** — remplacez `https://www.bendjo.bj` dans
-   `index.html`, `public/robots.txt` et `public/sitemap.xml` par le vrai
-   nom de domaine une fois le site déployé.
 
 ## Sécurité
 
-- **HTTPS** : automatique et gratuit sur Vercel et Netlify (certificat
-  Let's Encrypt généré et renouvelé tout seul), y compris avec un nom de
-  domaine personnalisé. Rien à configurer dans le code.
-- **Aucune donnée n'est envoyée à un serveur.** Le formulaire de contact et
-  le panier n'utilisent aucune API ni base de données : tout reste dans le
-  navigateur, et la "commande" ouvre simplement WhatsApp avec un message
-  pré-rempli. Il n'y a donc aucune donnée personnelle stockée ni de risque
-  de fuite côté serveur.
-- Pas de dépendance obscure : uniquement des paquets npm largement utilisés
-  (React, React Router, Framer Motion, Lucide, Tailwind).
 - Aucun `dangerouslySetInnerHTML`, `eval`, ni exécution de contenu externe.
 - **En-têtes de sécurité complets**, configurés à l'identique pour Vercel
   (`vercel.json`) et Netlify (`public/_headers`) :
