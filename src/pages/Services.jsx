@@ -59,6 +59,8 @@ export default function Services() {
                   <img
                     src={s.image}
                     alt={s.title}
+                    width="720"
+                    height="540"
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover photo-grade transition-transform duration-500 group-hover:scale-110"
@@ -101,7 +103,7 @@ export default function Services() {
         </Reveal>
         <Reveal delay={80} className="max-w-md mx-auto">
           <div className="rounded-2xl overflow-hidden" style={{ boxShadow: "0 20px 34px -18px rgba(22,35,28,0.25)" }}>
-            <img src={giftBoxImg} alt="Coffret cadeau BenDjo" loading="lazy" decoding="async" className="w-full object-cover photo-grade" />
+            <img src={giftBoxImg} alt="Coffret cadeau BenDjo" width="720" height="627" loading="lazy" decoding="async" className="w-full object-cover photo-grade" />
           </div>
         </Reveal>
       </section>

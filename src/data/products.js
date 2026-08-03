@@ -1,15 +1,15 @@
 import basilicImg from "../assets/product-basilic.webp";
 import hibiscusImg from "../assets/product-hibiscus.webp";
 import citronnelleImg from "../assets/product-citronnelle.jpg";
-import sandwichImg from "../assets/menu/sandwich-hachis-banane.jpg";
-import cafeImg from "../assets/menu/cafe-petit-dej.jpg";
-import glacesImg from "../assets/menu/glaces-maison.jpg";
+import sandwichImg from "../assets/menu/sandwich-hachis-banane.webp";
+import cafeImg from "../assets/menu/cafe-petit-dej.webp";
+import glacesImg from "../assets/menu/glaces-maison.webp";
 
 // Catégories affichées (dans cet ordre) sur la page Boutique.
 export const CATEGORIES = [
   { id: "infusions", label: "Infusions & thés naturels" },
   { id: "sandwichs", label: "Sandwichs & snacks" },
-  { id: "petit-dej", label: "Petit-déjeuner " },
+  { id: "petit-dej", label: "Petit-déjeuner & café" },
 ];
 
 export const PRODUCTS = [
@@ -73,10 +73,10 @@ export const PRODUCTS = [
     name: "Sandwich hachis ",
     tag: "Fait maison · légumes frais",
     description:
-      "Notre sandwich signature : un hachis de viande relevé aux légumes (chou, poivron, carotte) et une touche de mayonnaise. Préparé le jour même.",
+      "Notre sandwich signature : un hachis de viande relevé aux légumes (chou, poivron, carotte), servi avec des rondelles de banane plantain et une touche de mayonnaise. Préparé le jour même.",
     benefits: [
       "Garniture maison, légumes frais coupés du jour",
-      "Délicieux et pensé pour votre santé ",
+      "Délicieux",
       "Emballage kraft, pratique à emporter",
     ],
     price: null,
@@ -103,16 +103,16 @@ export const PRODUCTS = [
     liquid: "#8A5A32",
     liquidDark: "#5E3B1F",
   },
-  {
-     id: "sandwich-hachis",
-    category: "sandwichs",
-    name: "Petit déjeuner  ",
+   {
+    id: "Petit-déjeuner",
+    category: "sandwichs + une infusion BenDjo pour une belle journée",
+    name: "Petit-déjeuner ",
     tag: "Fait maison · légumes frais",
     description:
-      "Notre sandwich signature : un hachis de viande relevé aux légumes (chou, poivron, carotte) et une touche de mayonnaise. Préparé le jour même et pensé pour votre santé.",
+      "Notre sandwich signature : un hachis de viande relevé aux légumes (chou, poivron, carotte), servi avec des rondelles de banane plantain et une touche de mayonnaise. Préparé le jour même.",
     benefits: [
       "Garniture maison, légumes frais coupés du jour",
-      "Délicieux et pensé pour votre santé",
+      "Délicieux",
       "Emballage kraft, pratique à emporter",
     ],
     price: null,

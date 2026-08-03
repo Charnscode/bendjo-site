@@ -43,6 +43,8 @@ export default function Carousel({ slides }) {
           key={index}
           src={slides[index].src}
           alt={slides[index].alt}
+          width="720"
+          height="540"
           custom={dir}
           variants={variants}
           initial="enter"

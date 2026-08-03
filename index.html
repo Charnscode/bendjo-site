@@ -15,19 +15,40 @@
     />
     <meta name="google-site-verification" content="2aDosDa3CTiUEtO2yNJusn0vLPwhfL4L1gpe_s4zuQA" />
 
-    <!-- Fraunces (serif display) + Work Sans (corps) via Google Fonts -->
+    <!-- Fraunces (serif display) + Work Sans (corps) via Google Fonts — chargement asynchrone -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
 
-    <!-- Telma (script élégant) via Fontshare — utilisé pour les mots d'accent -->
+    <!-- Telma (script élégant) via Fontshare — utilisé pour les mots d'accent — chargement asynchrone -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://api.fontshare.com/v2/css?f[]=telma@400,500&display=swap"
+    />
     <link
       href="https://api.fontshare.com/v2/css?f[]=telma@400,500&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet"
+      />
+      <link href="https://api.fontshare.com/v2/css?f[]=telma@400,500&display=swap" rel="stylesheet" />
+    </noscript>
 
     <!-- Open Graph / réseaux sociaux -->
     <meta property="og:type" content="website" />
@@ -51,7 +72,7 @@
         "@type": "CafeOrCoffeeShop",
         "name": "BenDjo",
         "alternateName": "BenDjo Thé & Infusions",
-        "description": "Thés et infusions naturelles 100% béninoises (basilic, hibiscus, citronnelle), sandwichs faits maison, petit-déjeuner en entreprise et service traiteur.",
+        "description": "Thés et infusions naturelles 100% béninoises (basilic, hibiscus, citronnelle), sandwichs faits maison, petit-déjeuner en entreprise, glaces artisanales et service traiteur.",
         "image": "%VITE_SITE_URL%/og-image.jpg",
         "url": "%VITE_SITE_URL%/",
         "telephone": "+229 01 62 01 41 61",
@@ -84,12 +105,16 @@
             },
             {
               "@type": "MenuSection",
-              "name": "Petit-déjeuner ",
+              "name": "Petit-déjeuner & café",
               "hasMenuItem": [
                 { "@type": "MenuItem", "name": "Formule café & sandwich" }
               ]
             },
-            
+            {
+              "@type": "MenuSection",
+              "name": "Glaces maison",
+              "hasMenuItem": [
+                { "@type": "MenuItem", "name": "Glaces artisanales maison" }
               ]
             }
           ]
@@ -99,10 +124,8 @@
           "https://www.linkedin.com/company/bendjo/",
           "https://www.tiktok.com/@bendjo229"
         ]
-        }
-       
+      }
     </script>
-    <meta name="google-site-verification" content="2aDosDa3CTiUEtO2yNJusn0vLPwhfL4L1gpe_s4zuQA" />
   </head>
   <body>
     <div id="root"></div>

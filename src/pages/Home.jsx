@@ -123,6 +123,8 @@ function Hero() {
       <img
         src={slide.img}
         alt="BenDjo"
+        width="720"
+        height="960"
         fetchPriority="high"
         loading="eager"
         className="absolute w-full object-cover photo-grade"
@@ -189,7 +191,8 @@ function Hero() {
             to="/a-propos"
             className="px-7 py-3.5 rounded-full text-sm font-semibold border transition-transform hover:-translate-y-0.5 border-white text-white"
           >
-Nous connaître          </Link>
+            Nous Connaître
+          </Link>
         </motion.div>
 
         <motion.div variants={item} className="flex flex-wrap gap-3">
@@ -288,7 +291,7 @@ function Story() {
     <section className="grid lg:grid-cols-2 gap-10 items-center px-6 sm:px-10 py-20 bg-ivorySoft">
       <Reveal>
         <div className="rounded-2xl overflow-hidden aspect-[4/3]" style={{ boxShadow: "0 20px 34px -16px rgba(22,35,28,0.3)" }}>
-          <img src={teamImg} alt="L'équipe BenDjo lors d'un évènement" loading="lazy" decoding="async" className="w-full h-full object-cover photo-grade" />
+          <img src={teamImg} alt="L'équipe BenDjo lors d'un évènement" width="720" height="663" loading="lazy" decoding="async" className="w-full h-full object-cover photo-grade" />
         </div>
       </Reveal>
       <Reveal delay={120}>
@@ -327,7 +330,7 @@ function ProductsTeaser() {
       </Reveal>
       <Reveal delay={80}>
         <div className="rounded-2xl overflow-hidden mb-10" style={{ boxShadow: "0 20px 34px -18px rgba(22,35,28,0.28)" }}>
-          <img src={packsImg} alt="Boîtes d'infusions naturelles BenDjo" loading="lazy" decoding="async" className="w-full object-cover photo-grade" style={{ maxHeight: 320 }} />
+          <img src={packsImg} alt="Boîtes d'infusions naturelles BenDjo" width="675" height="900" loading="lazy" decoding="async" className="w-full object-cover photo-grade" style={{ maxHeight: 320 }} />
         </div>
       </Reveal>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

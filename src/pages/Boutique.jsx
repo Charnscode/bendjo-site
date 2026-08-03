@@ -20,13 +20,13 @@ export default function Boutique() {
   return (
     <Layout>
       <Seo
-        title="Boutique — Infusions, thés naturels, sandwichs & glaces"
-        description="La boutique BenDjo au Bénin : infusions et thés 100% naturels (basilic, hibiscus, citronnelle), sandwichs maison, petit-déjeuner d'entreprise et glaces artisanales. Commande directe sur WhatsApp, livraison à Cotonou."
+        title="Boutique — Infusions, thés naturels, sandwichs"
+        description="La boutique BenDjo au Bénin : infusions et thés 100% naturels (basilic, hibiscus, citronnelle), sandwichs maison, petit-déjeuner d'entreprise. Commande directe sur WhatsApp, livraison à Cotonou."
       />
       <PageBanner
         eyebrow="Boutique"
         title="Nos thés, infusions & gourmandises."
-        subtitle="Infusions 100% naturelles, sandwichs faits maison, petit-déjeuner d'entreprise et glaces artisanales. Ajoutez au panier et commandez en un clic sur WhatsApp."
+        subtitle="Infusions 100% naturelles, sandwichs faits maison, petit-déjeuner d'entreprise. Ajoutez au panier et commandez en un clic sur WhatsApp."
       />
 
       <section className="py-24 px-6 sm:px-10 bg-ivory">
@@ -38,6 +38,8 @@ export default function Boutique() {
             <img
               src={packsImg}
               alt="Infusions et thés naturels BenDjo, faits au Bénin"
+              width="675"
+              height="900"
               loading="lazy"
               decoding="async"
               className="w-full object-cover photo-grade"

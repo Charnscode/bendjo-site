@@ -16,7 +16,7 @@ export default function PageBanner({ eyebrow, title, subtitle, bgImage }) {
     <section className="relative overflow-hidden pt-32 pb-24 px-6 sm:px-10 bg-forest">
       {bgImage && (
         <>
-          <img src={bgImage} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover photo-grade" />
+          <img src={bgImage} alt="" aria-hidden="true" width="720" height="720" className="absolute inset-0 w-full h-full object-cover photo-grade" />
           <div
             className="absolute inset-0"
             style={{ background: "linear-gradient(100deg, rgba(22,35,28,0.92) 0%, rgba(22,35,28,0.75) 55%, rgba(22,35,28,0.5) 100%)" }}

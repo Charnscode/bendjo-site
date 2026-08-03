@@ -25,7 +25,7 @@ export default function VideoPlayer({ poster, src, alt = "Vidéo BenDjo", classN
           aria-label="Lire la vidéo BenDjo"
           className="relative w-full block group"
         >
-          <img src={poster} alt={alt} loading="lazy" decoding="async" className="w-full h-full object-cover photo-grade" />
+          <img src={poster} alt={alt} width="720" height="960" loading="lazy" decoding="async" className="w-full h-full object-cover photo-grade" />
           <div className="absolute inset-0 bg-forest/25 transition-colors duration-300 group-hover:bg-forest/35" />
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="w-16 h-16 rounded-full flex items-center justify-center bg-ivory/90 transition-transform duration-300 group-hover:scale-110">

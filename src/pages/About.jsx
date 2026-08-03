@@ -93,17 +93,17 @@ export default function About() {
       <section className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6 sm:px-10 py-28 bg-ivory">
         <Reveal>
           <div className="group rounded-2xl overflow-hidden aspect-[4/3]" style={{ boxShadow: "0 20px 34px -16px rgba(22,35,28,0.25)" }}>
-            <img src={teamImg} alt="L'équipe BenDjo lors d'un évènement" loading="lazy" decoding="async" className="w-full h-full object-cover photo-grade transition-transform duration-500 group-hover:scale-110" />
+            <img src={teamImg} alt="L'équipe BenDjo lors d'un évènement" width="720" height="663" loading="lazy" decoding="async" className="w-full h-full object-cover photo-grade transition-transform duration-500 group-hover:scale-110" />
           </div>
         </Reveal>
         <Reveal delay={80}>
           <div className="group rounded-2xl overflow-hidden aspect-[4/3]" style={{ boxShadow: "0 20px 34px -16px rgba(22,35,28,0.25)" }}>
-            <img src={mugImg} alt="Une tasse d'infusion BenDjo" loading="lazy" decoding="async" className="w-full h-full object-cover photo-grade transition-transform duration-500 group-hover:scale-110" />
+            <img src={mugImg} alt="Une tasse d'infusion BenDjo" width="506" height="900" loading="lazy" decoding="async" className="w-full h-full object-cover photo-grade transition-transform duration-500 group-hover:scale-110" />
           </div>
         </Reveal>
         <Reveal delay={160}>
           <div className="group rounded-2xl overflow-hidden aspect-[4/3]" style={{ boxShadow: "0 20px 34px -16px rgba(22,35,28,0.25)" }}>
-            <img src={boutiqueImg} alt="Boîtes BenDjo en boutique partenaire" loading="lazy" decoding="async" className="w-full h-full object-cover photo-grade transition-transform duration-500 group-hover:scale-110" />
+            <img src={boutiqueImg} alt="Boîtes BenDjo en boutique partenaire" width="720" height="540" loading="lazy" decoding="async" className="w-full h-full object-cover photo-grade transition-transform duration-500 group-hover:scale-110" />
           </div>
         </Reveal>
       </section>

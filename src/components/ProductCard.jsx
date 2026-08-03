@@ -54,6 +54,8 @@ export default function ProductCard({ product, onAdd, onImageClick, delay = 0 })
               <motion.img
                 src={product.image}
                 alt={product.name}
+                width="720"
+                height="720"
                 loading="lazy"
                 decoding="async"
                 animate={{ scale: active ? 1.08 : 1 }}

@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10 max-w-6xl mx-auto">
         <div>
           <div className="w-24 h-24 rounded-full flex items-center justify-center mb-3" style={{ background: "#F6F0E4" }}>
-            <img src={logo} alt="BenDjo" style={{ height: 64, objectFit: "contain" }} />
+            <img src={logo} alt="BenDjo" width="64" height="64" style={{ height: 64, objectFit: "contain" }} />
           </div>
           <p className="text-sm opacity-75">La marque qui vous reconnecte à vos origines.</p>
           <div className="flex gap-3 mt-4">
