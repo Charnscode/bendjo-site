@@ -22,6 +22,9 @@ import posterImg from "../assets/poster.webp";
 import mugImg from "../assets/mug.webp";
 import bottleImg from "../assets/gallery-bottle.webp";
 import collectionImg from "../assets/gallery-collection.webp";
+import petitDejCafeImg from "../assets/menu/cafe-petit-dej.webp";
+import petitDejLivraisonImg from "../assets/menu/equipe-livraison.webp";
+import petitDejCuisineImg from "../assets/menu/preparation-cuisine.webp";
 
 const STEPS = [
   {
@@ -58,7 +61,7 @@ const HERO_SLIDES = [
     lead: "Infusions naturelles 100% béninoises, fabriquées artisanalement.",
     sub: "Des mélanges de plantes locales et biologiques, assemblés à la main pour vous offrir un moment d'exception à chaque infusion, un rituel simple à intégrer dans votre quotidien, à la maison comme au bureau.",
     cta: "Découvrir la collection",
-    ctaTo: "/infusions",
+    ctaTo: "/boutique",
     badges: ["100% Naturel", "Fabriqué au Bénin", "Sans additifs"],
     steam: true,
   },
@@ -73,7 +76,7 @@ const HERO_SLIDES = [
     lead: "Basilic, Hibiscus, Citronnelle : chaque infusion a son caractère.",
     sub: "Préparées à la main, en petites quantités, pour garantir fraîcheur et qualité à chaque boîte.",
     cta: "Voir toutes les infusions",
-    ctaTo: "/infusions",
+    ctaTo: "/boutique",
     badges: ["3 saveurs", "1500 FCFA la boîte", "Fait main"],
     steam: false,
   },
@@ -186,8 +189,7 @@ function Hero() {
             to="/a-propos"
             className="px-7 py-3.5 rounded-full text-sm font-semibold border transition-transform hover:-translate-y-0.5 border-white text-white"
           >
-            Notre méthode
-          </Link>
+Nous connaître          </Link>
         </motion.div>
 
         <motion.div variants={item} className="flex flex-wrap gap-3">
@@ -257,6 +259,9 @@ function Gallery() {
   const slides = [
     { src: teamImg, alt: "L'équipe BenDjo lors d'un évènement", caption: "Sur le terrain, à la rencontre du public" },
     { src: kioskImg, alt: "Le kiosque BenDjo", caption: "Notre kiosque, pour un thé sur le pouce" },
+    { src: petitDejCafeImg, alt: "Formule café & sandwich BenDjo", caption: "Le petit-déjeuner BenDjo, café & sandwich" },
+    { src: petitDejLivraisonImg, alt: "L'équipe BenDjo en livraison de petit-déjeuner", caption: "Notre équipe en livraison, sur le terrain" },
+    { src: petitDejCuisineImg, alt: "Préparation des sandwichs petit-déjeuner BenDjo", caption: "Préparé le matin même, dans notre cuisine" },
     { src: packsImg, alt: "Boîtes d'infusions naturelles", caption: "Nos infusions, prêtes à être dégustées" },
     { src: boutiqueImg, alt: "BenDjo en boutique partenaire", caption: "Disponible chez nos boutiques partenaires" },
     { src: posterImg, alt: "Affiche Thé naturel BenDjo", caption: "Un pur rituel de bien-être" },
@@ -315,7 +320,7 @@ function ProductsTeaser() {
             <p className="font-script text-2xl mb-2 text-clay">Nos infusions</p>
             <h2 className="text-3xl font-display text-forest">Une plante pour chaque besoin.</h2>
           </div>
-          <Link to="/infusions" className="text-sm font-semibold text-forest">
+          <Link to="/boutique" className="text-sm font-semibold text-forest">
             Voir toutes les infusions →
           </Link>
         </div>

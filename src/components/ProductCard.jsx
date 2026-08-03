@@ -93,8 +93,8 @@ export default function ProductCard({ product, onAdd, onImageClick, delay = 0 })
             {product.tag}
           </p>
           <div className="flex items-center justify-between">
-            <span className="font-display italic text-ink" style={{ fontSize: 16 }}>
-              {product.price.toLocaleString("fr-FR")} FCFA
+            <span className="font-display italic text-ink" style={{ fontSize: product.price != null ? 16 : 13 }}>
+              {product.price != null ? `${product.price.toLocaleString("fr-FR")} FCFA` : "Prix sur demande"}
             </span>
             <button
               onClick={() => onAdd(product)}

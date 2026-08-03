@@ -7,7 +7,7 @@ import logo from "../assets/logo.webp";
 
 const LINKS = [
   { to: "/", label: "Accueil" },
-  { to: "/infusions", label: "Nos infusions" },
+  { to: "/boutique", label: "Boutique" },
   { to: "/services", label: "Services" },
   { to: "/a-propos", label: "À propos" },
   { to: "/contact", label: "Contact" },
@@ -18,7 +18,7 @@ const LINKS = [
  *   et devient plein au scroll. Utilisé uniquement sur la page d'accueil.
  */
 export default function Header({ transparent = false }) {
-  const { cartCount, checkout } = useCart();
+  const { cartCount, openDrawer } = useCart();
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(!transparent);
   const [hovered, setHovered] = useState(null);
@@ -91,8 +91,8 @@ export default function Header({ transparent = false }) {
 
       <div className="flex items-center gap-3">
         <button
-          aria-label="Commander le panier sur WhatsApp"
-          onClick={() => checkout()}
+          aria-label="Voir le panier"
+          onClick={openDrawer}
           className="relative flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition-transform hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2"
           style={{ background: "#16231C", color: "#F6F0E4", outlineColor: "#E2721A" }}
         >

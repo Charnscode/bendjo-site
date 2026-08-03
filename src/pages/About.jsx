@@ -10,8 +10,10 @@ import teamImg from "../assets/team.webp";
 import mugImg from "../assets/mug.webp";
 import boutiqueImg from "../assets/boutique.webp";
 import kioskImg from "../assets/kiosk.webp";
-import videoPoster from "../assets/video-poster.webp";
-import videoSrc from "../assets/video/bendjo.webm";
+import videoPoster1 from "../assets/video-poster-1.webp";
+import videoSrc1 from "../assets/video/bendjo-terrain-1.mp4";
+import videoPoster2 from "../assets/video-poster-2.webp";
+import videoSrc2 from "../assets/video/bendjo-terrain-2.mp4";
 
 const VALUES = [
   { icon: Leaf, title: "100% naturel", body: "Aucun additif, aucun arôme artificiel, uniquement des plantes sélectionnées avec soin." },
@@ -42,7 +44,10 @@ export default function About() {
 
       <section className="grid lg:grid-cols-2 gap-10 items-center px-6 sm:px-10 py-28 bg-ivory">
         <Reveal>
-          <VideoPlayer poster={videoPoster} src={videoSrc} alt="BenDjo en vidéo" className="aspect-[4/3]" />
+          <div className="grid grid-cols-2 gap-4">
+            <VideoPlayer poster={videoPoster1} src={videoSrc1} alt="BenDjo sur le terrain, en vidéo" className="aspect-[3/4]" />
+            <VideoPlayer poster={videoPoster2} src={videoSrc2} alt="BenDjo, coulisses en vidéo" className="aspect-[3/4]" />
+          </div>
         </Reveal>
         <Reveal delay={120}>
           <p className="font-script text-2xl mb-2 text-clay">Notre mission</p>

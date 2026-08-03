@@ -1,10 +1,21 @@
 import basilicImg from "../assets/product-basilic.webp";
 import hibiscusImg from "../assets/product-hibiscus.webp";
 import citronnelleImg from "../assets/product-citronnelle.jpg";
+import sandwichImg from "../assets/menu/sandwich-hachis-banane.jpg";
+import cafeImg from "../assets/menu/cafe-petit-dej.jpg";
+import glacesImg from "../assets/menu/glaces-maison.jpg";
+
+// Catégories affichées (dans cet ordre) sur la page Boutique.
+export const CATEGORIES = [
+  { id: "infusions", label: "Infusions & thés naturels" },
+  { id: "sandwichs", label: "Sandwichs & snacks" },
+  { id: "petit-dej", label: "Petit-déjeuner " },
+];
 
 export const PRODUCTS = [
   {
     id: "basilic",
+    category: "infusions",
     name: "Infusion Basilic",
     tag: "Vitamines A, K, C · bienfaits digestifs",
     description:
@@ -22,6 +33,7 @@ export const PRODUCTS = [
   },
   {
     id: "hibiscus",
+    category: "infusions",
     name: "Infusion Hibiscus",
     tag: "Vitamine C · Calcium · Magnésium · Potassium",
     description:
@@ -39,6 +51,7 @@ export const PRODUCTS = [
   },
   {
     id: "citronnelle",
+    category: "infusions",
     name: "Infusion Citronnelle, Laurier & Girofle",
     tag: "Vitamine E · Magnésium · Antioxydants",
     description:
@@ -53,6 +66,60 @@ export const PRODUCTS = [
     image: citronnelleImg,
     liquid: "#D4A24C",
     liquidDark: "#A87A2E",
+  },
+  {
+    id: "sandwich-hachis",
+    category: "sandwichs",
+    name: "Sandwich hachis ",
+    tag: "Fait maison · légumes frais",
+    description:
+      "Notre sandwich signature : un hachis de viande relevé aux légumes (chou, poivron, carotte) et une touche de mayonnaise. Préparé le jour même.",
+    benefits: [
+      "Garniture maison, légumes frais coupés du jour",
+      "Délicieux et pensé pour votre santé ",
+      "Emballage kraft, pratique à emporter",
+    ],
+    price: null,
+    priceNote: "Prix sur demande",
+    image: sandwichImg,
+    liquid: "#C9A24C",
+    liquidDark: "#9C7A2E",
+  },
+  {
+    id: "petit-dej-cafe",
+    category: "petit-dej",
+    name: "Formule café & sandwich",
+    tag: "Idéal bureau · à emporter ou livré",
+    description:
+      "Un café chaud accompagné d'un sandwich BenDjo, pensé pour démarrer la journée au bureau. Disponible à l'unité ou en formule petit-déjeuner d'entreprise pour toute une équipe.",
+    benefits: [
+      "Café servi chaud, prêt à emporter",
+      "Se combine avec nos infusions ou sandwichs",
+      "Formules entreprise sur devis",
+    ],
+    price: null,
+    priceNote: "Prix sur demande",
+    image: cafeImg,
+    liquid: "#8A5A32",
+    liquidDark: "#5E3B1F",
+  },
+  {
+     id: "sandwich-hachis",
+    category: "sandwichs",
+    name: "Petit déjeuner  ",
+    tag: "Fait maison · légumes frais",
+    description:
+      "Notre sandwich signature : un hachis de viande relevé aux légumes (chou, poivron, carotte) et une touche de mayonnaise. Préparé le jour même et pensé pour votre santé.",
+    benefits: [
+      "Garniture maison, légumes frais coupés du jour",
+      "Délicieux et pensé pour votre santé",
+      "Emballage kraft, pratique à emporter",
+    ],
+    price: null,
+    priceNote: "Prix sur demande",
+    image: glacesImg,
+    liquid: "#B85C7A",
+    liquidDark: "#7E3D53",
   },
 ];
 

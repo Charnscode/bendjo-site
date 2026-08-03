@@ -10,20 +10,20 @@ import Seo from "../components/Seo";
 import { buildWhatsAppContactLink } from "../lib/whatsapp";
 import giftBoxImg from "../assets/gift-box.webp";
 import packsImg from "../assets/packs.webp";
-import heroImg from "../assets/hero.webp";
 import kioskImg from "../assets/kiosk.webp";
+import petitDejImg from "../assets/menu/cafe-petit-dej.webp";
 
 const SERVICES = [
   {
     image: packsImg,
     title: "Infusions naturelles",
     body: "Notre gamme d'infusions 100% naturelles (Basilic, Hibiscus, Citronnelle & le Thé naturel 3-en-1) livrée partout au Bénin.",
-    cta: { label: "Voir les infusions", to: "/infusions" },
+    cta: { label: "Voir la boutique", to: "/boutique" },
   },
   {
-    image: heroImg,
+    image: petitDejImg,
     title: "Petit-déjeuner en entreprise",
-    body: "Un service de petit-déjeuner naturel et convivial pour vos équipes : infusions, viennoiseries et confitures, livrés sur votre lieu de travail.",
+    body: "Notre formule petit-déjeuner pour vos équipes : café chaud et sandwich BenDjo, livrés sur votre lieu de travail.",
     cta: { label: "Demander un devis", whatsapp: "Bonjour BenDjo, je souhaite un devis pour un petit-déjeuner en entreprise." },
   },
   {

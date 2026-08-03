@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import WhatsAppFloatingButton from "./WhatsAppFloatingButton";
 import BackToTop from "./BackToTop";
 import ScrollProgress from "./ScrollProgress";
+import CartDrawer from "./CartDrawer";
 import { useCart } from "../context/CartContext";
 
 export default function Layout({ children, transparentHeader = false }) {
@@ -18,6 +19,7 @@ export default function Layout({ children, transparentHeader = false }) {
       <Footer />
       <WhatsAppFloatingButton />
       <BackToTop />
+      <CartDrawer />
 
       <AnimatePresence>
         {toast && (

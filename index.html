@@ -4,45 +4,38 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/webp" href="/src/assets/logo.webp" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BenDjo | Infusions naturelles, petit-déjeuner &amp; traiteur</title>
+    <title>BenDjo — Infusions &amp; Thé naturels du Bénin | Sandwichs, petit-déjeuner &amp; traiteur à Cotonou</title>
     <meta
       name="description"
-      content="BenDjo, infusions 100% naturelles, petit-déjeuner d'entreprise et service traiteur au Bénin."
+      content="BenDjo : la marque béninoise d'infusions et de thé 100% naturels (basilic, hibiscus, citronnelle) à Cotonou. Sandwichs faits maison, petit-déjeuner d'entreprise et traiteur. Commande directe sur WhatsApp, livraison au Bénin."
     />
+    <meta
+      name="keywords"
+      content="BenDjo, BenDjo infusion, BenDjo thé, infusion Bénin, thé naturel Bénin, infusion naturelle Cotonou, infusion hibiscus, infusion basilic, infusion citronnelle, petit-déjeuner entreprise Cotonou, traiteur Bénin, sandwich Cotonou"
+    />
+    <meta name="google-site-verification" content="2aDosDa3CTiUEtO2yNJusn0vLPwhfL4L1gpe_s4zuQA" />
 
     <!-- Fraunces (serif display) + Work Sans (corps) via Google Fonts -->
-    <!-- Telma (script élégant) via Fontshare, pour les mots d'accent -->
-    <!-- Chargement asynchrone : les polices ne bloquent plus l'affichage de la page -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://api.fontshare.com" />
     <link
-      rel="preload"
-      as="style"
       href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap"
-      data-swap-to-stylesheet
+      rel="stylesheet"
     />
+
+    <!-- Telma (script élégant) via Fontshare — utilisé pour les mots d'accent -->
     <link
-      rel="preload"
-      as="style"
       href="https://api.fontshare.com/v2/css?f[]=telma@400,500&display=swap"
-      data-swap-to-stylesheet
+      rel="stylesheet"
     />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap"
-      />
-      <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=telma@400,500&display=swap" />
-    </noscript>
 
     <!-- Open Graph / réseaux sociaux -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="%VITE_SITE_URL%/" />
-    <meta property="og:title" content="BenDjo | Infusions naturelles, petit-déjeuner & traiteur" />
+    <meta property="og:title" content="BenDjo — Infusions & Thé naturels du Bénin, sandwichs & traiteur à Cotonou" />
     <meta
       property="og:description"
-      content="Infusions 100% naturelles, petit-déjeuner d'entreprise et service traiteur au Bénin."
+      content="BenDjo : infusions et thé 100% naturels, sandwichs maison, petit-déjeuner d'entreprise et traiteur. Livraison au Bénin, commande sur WhatsApp."
     />
     <meta property="og:image" content="%VITE_SITE_URL%/og-image.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -55,26 +48,62 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
+        "@type": "CafeOrCoffeeShop",
         "name": "BenDjo",
-        "description": "Infusions naturelles 100% béninoises, petit-déjeuner en entreprise et service traiteur.",
+        "alternateName": "BenDjo Thé & Infusions",
+        "description": "Thés et infusions naturelles 100% béninoises (basilic, hibiscus, citronnelle), sandwichs faits maison, petit-déjeuner en entreprise et service traiteur.",
         "image": "%VITE_SITE_URL%/og-image.jpg",
         "url": "%VITE_SITE_URL%/",
         "telephone": "+229 01 62 01 41 61",
         "email": "bendjobenin@gmail.com",
         "priceRange": "1500 FCFA",
+        "servesCuisine": "Infusions, thés naturels, sandwichs, petit-déjeuner",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Cotonou",
           "addressCountry": "BJ"
+        },
+        "hasMenu": {
+          "@type": "Menu",
+          "hasMenuSection": [
+            {
+              "@type": "MenuSection",
+              "name": "Infusions & thés naturels",
+              "hasMenuItem": [
+                { "@type": "MenuItem", "name": "Infusion Basilic", "offers": { "@type": "Offer", "price": "1500", "priceCurrency": "XOF" } },
+                { "@type": "MenuItem", "name": "Infusion Hibiscus", "offers": { "@type": "Offer", "price": "1500", "priceCurrency": "XOF" } },
+                { "@type": "MenuItem", "name": "Infusion Citronnelle, Laurier & Girofle", "offers": { "@type": "Offer", "price": "1500", "priceCurrency": "XOF" } }
+              ]
+            },
+            {
+              "@type": "MenuSection",
+              "name": "Sandwichs & snacks",
+              "hasMenuItem": [
+                { "@type": "MenuItem", "name": "Sandwich hachis & banane plantain" }
+              ]
+            },
+            {
+              "@type": "MenuSection",
+              "name": "Petit-déjeuner ",
+              "hasMenuItem": [
+                { "@type": "MenuItem", "name": "Formule café & sandwich" }
+              ]
+            },
+            
+              ]
+            }
+          ]
         },
         "sameAs": [
           "https://www.facebook.com/BenDjoBenin",
           "https://www.linkedin.com/company/bendjo/",
           "https://www.tiktok.com/@bendjo229"
         ]
-      }
+        }
+       
     </script>
+           <meta name="google-site-verification" content="2aDosDa3CTiUEtO2yNJusn0vLPwhfL4L1gpe_s4zuQA" />
+
   </head>
   <body>
     <div id="root"></div>

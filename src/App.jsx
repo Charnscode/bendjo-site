@@ -1,10 +1,10 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import { CartProvider } from "./context/CartContext";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
-import Infusions from "./pages/Infusions";
+import Boutique from "./pages/Boutique";
 import Contact from "./pages/Contact";
 
 export default function App() {
@@ -14,7 +14,9 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/a-propos" element={<About />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/infusions" element={<Infusions />} />
+        <Route path="/boutique" element={<Boutique />} />
+        {/* Ancienne URL conservée en redirection (évite les liens/index morts) */}
+        <Route path="/infusions" element={<Navigate to="/boutique" replace />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </CartProvider>

@@ -49,7 +49,7 @@ export default function ProductModal({ product, onClose, onAdd }) {
 
             <div className="p-8 flex flex-col">
               <p className="font-script text-2xl mb-1" style={{ color: product.liquid }}>
-                Infusion naturelle
+                {product.categoryLabel || "BenDjo"}
               </p>
               <h3 className="text-2xl font-display text-forest mb-3">{product.name}</h3>
               <p className="text-sm mb-4" style={{ color: "#6B6F60" }}>
@@ -70,7 +70,7 @@ export default function ProductModal({ product, onClose, onAdd }) {
               )}
               <div className="flex items-center justify-between mb-5">
                 <span className="font-display italic text-2xl text-ink">
-                  {product.price.toLocaleString("fr-FR")} FCFA
+                  {product.price != null ? `${product.price.toLocaleString("fr-FR")} FCFA` : "Prix sur demande"}
                 </span>
               </div>
               <button
@@ -82,7 +82,7 @@ export default function ProductModal({ product, onClose, onAdd }) {
                 style={{ background: product.liquid }}
               >
                 <ShoppingBag size={16} />
-                Ajouter au panier
+                {product.price != null ? "Ajouter au panier" : "Ajouter (prix à confirmer)"}
               </button>
             </div>
           </motion.div>
